@@ -1,5 +1,6 @@
 
-var targetNumber = Math.floor((Math.random() * 120 - 19) + 19);
+var targetNumber = Math.floor((Math.random() * (120 - 19 +1)) + 19);
+//var random = Math.floor(Math.random() * (120 - 19 + 1)) + 19  --- Meguels solution
 //selecting random # between 19 and 120
 //BTWs.  THIS IS NOT WORKING PROPERLY!!
 $("#number-to-guess").text("Number to Guess: " + targetNumber);
@@ -18,7 +19,7 @@ $("#numberLosses").text("Losses: " + losses);
 //$("#totalScore").text("Your total score is: " + counter);
 
 function reset(){
-  targetNumber = Math.floor((Math.random() * 120 - 19) + 19);
+  targetNumber = Math.floor((Math.random() * (120 - 19 + 1)) + 19);
   $("#number-to-guess").text("Number to Guess: " + targetNumber);
   blue = Math.floor(Math.random() * 12 + 1);
   red = Math.floor(Math.random() * 12 + 1);
